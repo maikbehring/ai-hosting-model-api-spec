@@ -94,6 +94,6 @@ Die Liste entspricht dem Developer-Portal „Verfügbare Modelle“ (Stand der S
 ## Quellen
 
 - [mittwald AI Hosting Models (Docs)](https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/)  
-- [AI Hosting Bench](https://ai-hosting-bench.mittwald.app)  
+- [AI Hosting Bench](https://ai-hosting-bench.p-asdxps.project.space)  
 
 `schema_version`: `1.0`

@@ -84,7 +84,7 @@
   "urls": {
     "model_card": null,
     "creator": null,
-    "bench": "https://ai-hosting-bench.mittwald.app",
+    "bench": "https://ai-hosting-bench.p-asdxps.project.space",
     "docs": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/",
     "portal": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/"
   },
@@ -95,7 +95,7 @@
     },
     "secondary": {
       "label": "Im Bench vergleichen",
-      "url": "https://ai-hosting-bench.mittwald.app"
+      "url": "https://ai-hosting-bench.p-asdxps.project.space"
     }
   },
   "performance": {

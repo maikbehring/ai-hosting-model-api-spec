@@ -114,7 +114,7 @@ const DEFAULT_MODELS = {
     "urls": {
       "model_card": "https://huggingface.co/openai/gpt-oss-120b",
       "creator": "https://openai.com/index/introducing-gpt-oss/",
-      "bench": "https://ai-hosting-bench.mittwald.app",
+      "bench": "https://ai-hosting-bench.p-asdxps.project.space",
       "docs": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/",
       "portal": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/"
     },
@@ -125,7 +125,7 @@ const DEFAULT_MODELS = {
       },
       "secondary": {
         "label": "Im Bench vergleichen",
-        "url": "https://ai-hosting-bench.mittwald.app"
+        "url": "https://ai-hosting-bench.p-asdxps.project.space"
       }
     },
     "performance": {
@@ -307,7 +307,7 @@ const DEFAULT_MODELS = {
     "urls": {
       "model_card": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
       "creator": "https://mistral.ai/",
-      "bench": "https://ai-hosting-bench.mittwald.app",
+      "bench": "https://ai-hosting-bench.p-asdxps.project.space",
       "docs": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/",
       "portal": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/"
     },
@@ -318,7 +318,7 @@ const DEFAULT_MODELS = {
       },
       "secondary": {
         "label": "Im Bench vergleichen",
-        "url": "https://ai-hosting-bench.mittwald.app"
+        "url": "https://ai-hosting-bench.p-asdxps.project.space"
       }
     },
     "performance": {
@@ -463,7 +463,7 @@ const DEFAULT_MODELS = {
     "urls": {
       "model_card": null,
       "creator": null,
-      "bench": "https://ai-hosting-bench.mittwald.app",
+      "bench": "https://ai-hosting-bench.p-asdxps.project.space",
       "docs": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/",
       "portal": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/"
     },
@@ -474,7 +474,7 @@ const DEFAULT_MODELS = {
       },
       "secondary": {
         "label": "Im Bench vergleichen",
-        "url": "https://ai-hosting-bench.mittwald.app"
+        "url": "https://ai-hosting-bench.p-asdxps.project.space"
       }
     },
     "performance": {
@@ -596,7 +596,7 @@ const DEFAULT_MODELS = {
     "urls": {
       "model_card": null,
       "creator": null,
-      "bench": "https://ai-hosting-bench.mittwald.app",
+      "bench": "https://ai-hosting-bench.p-asdxps.project.space",
       "docs": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/",
       "portal": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/"
     },
@@ -607,7 +607,7 @@ const DEFAULT_MODELS = {
       },
       "secondary": {
         "label": "Im Bench vergleichen",
-        "url": "https://ai-hosting-bench.mittwald.app"
+        "url": "https://ai-hosting-bench.p-asdxps.project.space"
       }
     },
     "performance": {
@@ -760,7 +760,7 @@ const DEFAULT_MODELS = {
     "urls": {
       "model_card": "https://huggingface.co/Qwen/Qwen3.5-122B-A10B",
       "creator": "https://qwen.ai/",
-      "bench": "https://ai-hosting-bench.mittwald.app",
+      "bench": "https://ai-hosting-bench.p-asdxps.project.space",
       "docs": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/",
       "portal": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/"
     },
@@ -771,7 +771,7 @@ const DEFAULT_MODELS = {
       },
       "secondary": {
         "label": "Im Bench vergleichen",
-        "url": "https://ai-hosting-bench.mittwald.app"
+        "url": "https://ai-hosting-bench.p-asdxps.project.space"
       }
     },
     "performance": {
@@ -958,7 +958,7 @@ const DEFAULT_MODELS = {
     "urls": {
       "model_card": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
       "creator": "https://qwen.ai/",
-      "bench": "https://ai-hosting-bench.mittwald.app",
+      "bench": "https://ai-hosting-bench.p-asdxps.project.space",
       "docs": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/",
       "portal": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/"
     },
@@ -969,7 +969,7 @@ const DEFAULT_MODELS = {
       },
       "secondary": {
         "label": "Im Bench vergleichen",
-        "url": "https://ai-hosting-bench.mittwald.app"
+        "url": "https://ai-hosting-bench.p-asdxps.project.space"
       }
     },
     "performance": {
@@ -1156,7 +1156,7 @@ const DEFAULT_MODELS = {
     "urls": {
       "model_card": "https://huggingface.co/Qwen/Qwen3.8-27B",
       "creator": "https://qwen.ai/",
-      "bench": "https://ai-hosting-bench.mittwald.app",
+      "bench": "https://ai-hosting-bench.p-asdxps.project.space",
       "docs": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/",
       "portal": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/"
     },
@@ -1167,7 +1167,7 @@ const DEFAULT_MODELS = {
       },
       "secondary": {
         "label": "Im Bench vergleichen",
-        "url": "https://ai-hosting-bench.mittwald.app"
+        "url": "https://ai-hosting-bench.p-asdxps.project.space"
       }
     },
     "performance": {
@@ -1369,7 +1369,7 @@ const DEFAULT_MODELS = {
     "urls": {
       "model_card": "https://huggingface.co/Qwen/Qwen3.5-0.8B",
       "creator": "https://qwen.ai/",
-      "bench": "https://ai-hosting-bench.mittwald.app",
+      "bench": "https://ai-hosting-bench.p-asdxps.project.space",
       "docs": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/",
       "portal": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/"
     },
@@ -1380,7 +1380,7 @@ const DEFAULT_MODELS = {
       },
       "secondary": {
         "label": "Im Bench vergleichen",
-        "url": "https://ai-hosting-bench.mittwald.app"
+        "url": "https://ai-hosting-bench.p-asdxps.project.space"
       }
     },
     "performance": {
@@ -1517,7 +1517,7 @@ const DEFAULT_MODELS = {
     "urls": {
       "model_card": null,
       "creator": null,
-      "bench": "https://ai-hosting-bench.mittwald.app",
+      "bench": "https://ai-hosting-bench.p-asdxps.project.space",
       "docs": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/",
       "portal": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/"
     },
@@ -1528,7 +1528,7 @@ const DEFAULT_MODELS = {
       },
       "secondary": {
         "label": "Im Bench vergleichen",
-        "url": "https://ai-hosting-bench.mittwald.app"
+        "url": "https://ai-hosting-bench.p-asdxps.project.space"
       }
     },
     "performance": {
@@ -1647,7 +1647,7 @@ const DEFAULT_MODELS = {
     "urls": {
       "model_card": null,
       "creator": null,
-      "bench": "https://ai-hosting-bench.mittwald.app",
+      "bench": "https://ai-hosting-bench.p-asdxps.project.space",
       "docs": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/",
       "portal": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/"
     },
@@ -1658,7 +1658,7 @@ const DEFAULT_MODELS = {
       },
       "secondary": {
         "label": "Im Bench vergleichen",
-        "url": "https://ai-hosting-bench.mittwald.app"
+        "url": "https://ai-hosting-bench.p-asdxps.project.space"
       }
     },
     "performance": {
@@ -1784,7 +1784,7 @@ const DEFAULT_MODELS = {
     "urls": {
       "model_card": "https://huggingface.co/Qwen/Qwen3-Embedding-8B",
       "creator": null,
-      "bench": "https://ai-hosting-bench.mittwald.app",
+      "bench": "https://ai-hosting-bench.p-asdxps.project.space",
       "docs": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/",
       "portal": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/"
     },
@@ -1795,7 +1795,7 @@ const DEFAULT_MODELS = {
       },
       "secondary": {
         "label": "Im Bench vergleichen",
-        "url": "https://ai-hosting-bench.mittwald.app"
+        "url": "https://ai-hosting-bench.p-asdxps.project.space"
       }
     },
     "performance": {

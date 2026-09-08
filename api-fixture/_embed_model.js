@@ -118,7 +118,7 @@ const DEFAULT_MODEL = {
   "urls": {
     "model_card": "https://huggingface.co/Qwen/Qwen3.8-27B",
     "creator": "https://qwen.ai/",
-    "bench": "https://ai-hosting-bench.mittwald.app",
+    "bench": "https://ai-hosting-bench.p-asdxps.project.space",
     "docs": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/",
     "portal": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/"
   },
@@ -129,7 +129,7 @@ const DEFAULT_MODEL = {
     },
     "secondary": {
       "label": "Im Bench vergleichen",
-      "url": "https://ai-hosting-bench.mittwald.app"
+      "url": "https://ai-hosting-bench.p-asdxps.project.space"
     }
   },
   "performance": {

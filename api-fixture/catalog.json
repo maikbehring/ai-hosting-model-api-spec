@@ -1,0 +1,277 @@
+{
+  "schema_version": "1.0",
+  "meta": {
+    "title": "mittwald AI Hosting Model Catalog",
+    "locale_default": "de",
+    "exported_at": "2026-09-08",
+    "data_source": "ai-hosting-bench",
+    "score_precision": {
+      "default": "bf16_or_fp16",
+      "per_quantization": false,
+      "note": {
+        "de": "Benchmarkwerte stammen typischerweise aus Standard-Präzision (z. B. BF16/FP16). INT8/INT4 spart VRAM und kann die Qualität leicht senken — es gibt einen Score pro Modell, nicht pro Quantisierung.",
+        "en": "Benchmark scores typically come from standard precision (e.g. BF16/FP16). INT8/INT4 saves VRAM and may slightly reduce quality — one score per model, not per quantization."
+      }
+    }
+  },
+  "tiers": [
+    {
+      "id": "xs",
+      "label": "XS",
+      "vram_gb": null,
+      "bookable": false
+    },
+    {
+      "id": "s",
+      "label": "S",
+      "vram_gb": null,
+      "bookable": false
+    },
+    {
+      "id": "m",
+      "label": "M",
+      "vram_gb": 48,
+      "bookable": true
+    },
+    {
+      "id": "l",
+      "label": "L",
+      "vram_gb": 96,
+      "bookable": true
+    },
+    {
+      "id": "lplus",
+      "label": "L+",
+      "vram_gb": 288,
+      "bookable": false
+    },
+    {
+      "id": "xl",
+      "label": "XL",
+      "vram_gb": 192,
+      "bookable": true
+    },
+    {
+      "id": "xxl",
+      "label": "XXL",
+      "vram_gb": null,
+      "bookable": false
+    }
+  ],
+  "taxonomy": {
+    "tags": [
+      "coding",
+      "chat",
+      "vision",
+      "agents",
+      "tools",
+      "ocr",
+      "embedding",
+      "image"
+    ],
+    "badges": [
+      "shared",
+      "recommended",
+      "vision",
+      "new"
+    ],
+    "capabilities": [
+      "vision",
+      "tools",
+      "reasoning",
+      "function_calling",
+      "multilingual"
+    ],
+    "lifecycle_statuses": [
+      {
+        "id": "lts",
+        "label": "LTS"
+      },
+      {
+        "id": "stable",
+        "label": "Stable"
+      },
+      {
+        "id": "testphase",
+        "label": "Testphase"
+      }
+    ],
+    "token_factor_note": {
+      "de": "Tokenfaktor multipliziert den Verbrauch in Shared AI Hosting (1x = Standard).",
+      "en": "Token factor multiplies usage on Shared AI Hosting (1x = standard)."
+    }
+  },
+  "benchmarks": {
+    "aa_intelligence_index": {
+      "key": "aa_intelligence_index",
+      "name": "AA Intelligence Index",
+      "short_name": "Index",
+      "blurb": {
+        "de": "Gesamtleistung messen",
+        "en": "Overall ability"
+      },
+      "category": "Composite Index",
+      "higher_is_better": true,
+      "urls": [
+        "https://artificialanalysis.ai/methodology/intelligence-benchmarking"
+      ]
+    },
+    "aa_coding_index": {
+      "key": "aa_coding_index",
+      "name": "AA Coding Index",
+      "short_name": "Coding",
+      "blurb": {
+        "de": "Coding messen",
+        "en": "Coding ability"
+      },
+      "category": "Composite Index",
+      "higher_is_better": true,
+      "urls": [
+        "https://artificialanalysis.ai/methodology/intelligence-benchmarking"
+      ]
+    },
+    "deepswe": {
+      "key": "deepswe",
+      "name": "DeepSWE",
+      "short_name": "DeepSWE",
+      "blurb": {
+        "de": "Lange Coding-Jobs",
+        "en": "Long coding jobs"
+      },
+      "category": "Software Engineering",
+      "higher_is_better": true,
+      "urls": [
+        "https://deepswe.datacurve.ai/"
+      ]
+    },
+    "mmmu_pro": {
+      "key": "mmmu_pro",
+      "name": "MMMU Pro",
+      "short_name": "MMMUPro",
+      "blurb": {
+        "de": "Bilder verstehen",
+        "en": "Understand images"
+      },
+      "category": "Vision-language Reasoning",
+      "higher_is_better": true,
+      "urls": [
+        "https://mmmu-benchmark.github.io/"
+      ]
+    },
+    "toolathlon": {
+      "key": "toolathlon",
+      "name": "Toolathlon Verified",
+      "short_name": "Toolathlon",
+      "blurb": {
+        "de": "Tools nutzen",
+        "en": "Use tools"
+      },
+      "category": "Agentic Tool Use",
+      "higher_is_better": true,
+      "urls": [
+        "https://toolathlon.xyz/docs/leaderboard"
+      ]
+    },
+    "ocrbench_v2": {
+      "key": "ocrbench_v2",
+      "name": "OCRBench v2",
+      "short_name": "OCRBench",
+      "blurb": {
+        "de": "Text in Bildern",
+        "en": "Text in images"
+      },
+      "category": "OCR",
+      "higher_is_better": true,
+      "urls": [
+        "https://99franklin.github.io/ocrbench_v2/",
+        "https://arxiv.org/abs/2501.00321"
+      ]
+    },
+    "mteb_multilingual": {
+      "key": "mteb_multilingual",
+      "name": "MTEB Multilingual",
+      "short_name": "MTEB",
+      "blurb": {
+        "de": "Embeddings messen",
+        "en": "Measure embeddings"
+      },
+      "category": "Embeddings",
+      "higher_is_better": true,
+      "urls": [
+        "https://huggingface.co/spaces/mteb/leaderboard",
+        "https://github.com/embeddings-benchmark/mteb"
+      ]
+    },
+    "image_arena_elo": {
+      "key": "image_arena_elo",
+      "name": "Image Arena Elo",
+      "short_name": "Img Arena",
+      "blurb": {
+        "de": "Img Arena",
+        "en": "Img Arena"
+      },
+      "category": "Image Generation",
+      "higher_is_better": true,
+      "urls": [
+        "https://arena.ai/leaderboard/text-to-image",
+        "https://artificialanalysis.ai/image/leaderboard/text-to-image"
+      ]
+    },
+    "terminal_bench_2_1": {
+      "key": "terminal_bench_2_1",
+      "name": "Terminal-Bench 2.1",
+      "short_name": "Term 2.1",
+      "blurb": {
+        "de": "Terminal bedienen",
+        "en": "Use terminal"
+      },
+      "category": "Agentic Coding & Terminal Use",
+      "higher_is_better": true,
+      "urls": [
+        "https://www.tbench.ai/leaderboard/terminal-bench/2.1"
+      ]
+    },
+    "livecodebench": {
+      "key": "livecodebench",
+      "name": "LiveCodeBench",
+      "short_name": "LCBench",
+      "blurb": {
+        "de": "Neue Code-Aufgaben",
+        "en": "Fresh coding tasks"
+      },
+      "category": "Coding",
+      "higher_is_better": true,
+      "urls": [
+        "https://livecodebench.github.io/"
+      ]
+    },
+    "swe_bench_verified": {
+      "key": "swe_bench_verified",
+      "name": "SWE-bench Verified",
+      "short_name": "SWE-V",
+      "blurb": {
+        "de": "SWE-V",
+        "en": "SWE-V"
+      },
+      "category": "Software Engineering",
+      "higher_is_better": true,
+      "urls": [
+        "https://www.swebench.com/SWE-bench/"
+      ]
+    },
+    "tau2_bench_telecom": {
+      "key": "tau2_bench_telecom",
+      "name": "τ²-Bench Telecom",
+      "short_name": "τ² Tel",
+      "blurb": {
+        "de": "τ² Tel",
+        "en": "τ² Tel"
+      },
+      "category": "Agentic Tool Use",
+      "higher_is_better": true,
+      "urls": [
+        "https://arxiv.org/abs/2506.07982"
+      ]
+    }
+  }
+}

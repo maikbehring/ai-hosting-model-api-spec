@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "id": "whisper-large-v3-turbo",
+  "slug": "whisper-large-v3-turbo",
+  "display_name": "whisper-large-v3-turbo",
+  "date_added": null,
+  "updated_at": "2026-09-08",
+  "url": null,
+  "params": null,
+  "params_active": null,
+  "context": null,
+  "license": null,
+  "creator": {
+    "name": null,
+    "url": null,
+    "logo_url": null
+  },
+  "short_description": "OpenAI Whisper Large V3 Turbo — Speech-to-Text auf mittwald Shared AI Hosting.",
+  "pitch": "Schnelles Speech-to-Text-Modell für Transkription.",
+  "tags": [
+    "speech",
+    "asr"
+  ],
+  "not_ideal_for": [
+    "Text-Chat / Coding (Audio-Spezialmodell)"
+  ],
+  "badges": [
+    "shared",
+    "lts",
+    "speech"
+  ],
+  "capabilities": {
+    "vision": false,
+    "tools": false,
+    "reasoning": false,
+    "function_calling": false,
+    "multilingual": true
+  },
+  "vram": {
+    "fp16": null,
+    "int8": null,
+    "int4": null
+  },
+  "vram_unit": "GB",
+  "recommended_quantization": null,
+  "hosting": {
+    "shared": true,
+    "shared_model_id": "whisper-large-v3-turbo",
+    "api_model_id": "whisper-large-v3-turbo",
+    "recommended_quant": null,
+    "fits_tiers": [],
+    "comfortable_tiers": [],
+    "docs_url": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/",
+    "playground_url": null,
+    "status": "lts",
+    "status_label": "LTS",
+    "token_factor": 0.5,
+    "token_factor_label": "0,5x"
+  },
+  "lifecycle": {
+    "status": "lts",
+    "label": "LTS"
+  },
+  "token_factor": 0.5,
+  "token_factor_label": "0,5x",
+  "pricing": null,
+  "mittwald_pricing": {
+    "shared_input_per_1m": null,
+    "shared_output_per_1m": null,
+    "currency": "EUR",
+    "dedicated_via_tier": false,
+    "token_factor": 0.5,
+    "token_factor_label": "0,5x"
+  },
+  "highlights": [],
+  "ranking": {
+    "shared_overall": null,
+    "size_class": null,
+    "size_class_label": null,
+    "rank_in_size_class_coding": null,
+    "rank_in_shared_coding": null
+  },
+  "alternatives": [],
+  "urls": {
+    "model_card": null,
+    "creator": null,
+    "bench": "https://ai-hosting-bench.mittwald.app",
+    "docs": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/",
+    "portal": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/"
+  },
+  "cta": {
+    "primary": {
+      "label": "Modell nutzen",
+      "url": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/"
+    },
+    "secondary": {
+      "label": "Im Bench vergleichen",
+      "url": "https://ai-hosting-bench.mittwald.app"
+    }
+  },
+  "performance": {
+    "tokens_per_second": null,
+    "time_to_first_token_ms": null,
+    "measured_on_tier": null,
+    "measured_quant": null
+  },
+  "languages": [
+    "de",
+    "en",
+    "multilingual"
+  ],
+  "i18n": {
+    "de": {
+      "display_name": "whisper-large-v3-turbo",
+      "short_description": "OpenAI Whisper Large V3 Turbo — Speech-to-Text auf mittwald Shared AI Hosting.",
+      "pitch": "Schnelles Speech-to-Text-Modell für Transkription."
+    },
+    "en": {
+      "display_name": "whisper-large-v3-turbo",
+      "short_description": "OpenAI Whisper Large V3 Turbo — Speech-to-Text auf mittwald Shared AI Hosting.",
+      "pitch": "Schnelles Speech-to-Text-Modell für Transkription."
+    }
+  },
+  "scores": {},
+  "scores_updated": {},
+  "changelog": [
+    {
+      "date": "2026-09-08",
+      "note": "An Portal-Liste inkl. Status & Tokenfaktor angeglichen"
+    }
+  ],
+  "category": "speech"
+}

@@ -1,0 +1,869 @@
+{
+  "schema_version": "1.0",
+  "id": "qwen3-8-27b",
+  "slug": "qwen3-8-27b",
+  "display_name": "Qwen3.8-27B",
+  "date_added": "2026-08-05",
+  "updated_at": "2026-08-26",
+  "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+  "params": "27B",
+  "params_active": null,
+  "context": "256k",
+  "license": "apache-2.0",
+  "creator": {
+    "name": "Alibaba",
+    "url": "https://qwen.ai/",
+    "logo_url": null
+  },
+  "short_description": "Starkes Allround- und Coding-Modell mit Vision. Gut für Agenten, Tools und multimodale Aufgaben; läuft auf Dedicated-GPUs ab ca. 15 GB INT4.",
+  "pitch": "Starkes Coding mit Vision — passt ab Dedicated L.",
+  "tags": [
+    "coding",
+    "chat",
+    "vision",
+    "agents",
+    "tools"
+  ],
+  "not_ideal_for": [
+    "Reine OCR-/Dokumentenextraktion (besser Spezialmodelle)",
+    "Sehr kleine GPUs unter 15 GB"
+  ],
+  "badges": [
+    "shared",
+    "recommended",
+    "vision"
+  ],
+  "capabilities": {
+    "vision": true,
+    "tools": true,
+    "reasoning": true,
+    "function_calling": true,
+    "multilingual": true
+  },
+  "vram": {
+    "fp16": 56,
+    "int8": 28,
+    "int4": 15
+  },
+  "vram_unit": "GB",
+  "recommended_quantization": "int4",
+  "quantization_note": "Benchmarkwerte stammen typischerweise aus Standard-Präzision (z. B. BF16/FP16). INT8/INT4 spart VRAM und kann die Qualität leicht senken — im Datensatz gibt es einen Score pro Modell, nicht pro Quantisierung.",
+  "score_precision": {
+    "default": "bf16_or_fp16",
+    "per_quantization": false,
+    "note": "Ein Score pro Modell; nicht getrennt nach FP16/INT8/INT4."
+  },
+  "hosting": {
+    "shared": true,
+    "shared_model_id": "qwen3-8-27b",
+    "api_model_id": "qwen3.8-27b-nvfp4",
+    "recommended_quant": "int4",
+    "fits_tiers": [
+      "L",
+      "L+",
+      "XL",
+      "XXL"
+    ],
+    "comfortable_tiers": [
+      "L+",
+      "XL"
+    ],
+    "docs_url": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/",
+    "playground_url": null
+  },
+  "pricing": {
+    "input_per_1m": 0.4,
+    "output_per_1m": 3,
+    "blended_3_to_1": 1.05,
+    "currency": "USD",
+    "source": "openrouter:qwen/qwen3.8-27b",
+    "note": "OpenRouter-Referenzpreis. Für mittwald Shared/Dedicated eigene Preise verwenden."
+  },
+  "mittwald_pricing": {
+    "shared_input_per_1m": null,
+    "shared_output_per_1m": null,
+    "currency": "EUR",
+    "dedicated_via_tier": true
+  },
+  "highlights": [
+    {
+      "key": "aa_coding_index",
+      "label": "Coding",
+      "blurb": "Coding messen",
+      "value": 68.1,
+      "updated": "2026-08-25"
+    },
+    {
+      "key": "deepswe",
+      "label": "Lange Coding-Jobs",
+      "blurb": "Lange Coding-Jobs",
+      "value": 42.2,
+      "updated": "2026-08-15"
+    },
+    {
+      "key": "mmmu_pro",
+      "label": "Vision",
+      "blurb": "Bilder verstehen",
+      "value": 76.3,
+      "updated": "2026-08-17"
+    },
+    {
+      "key": "toolathlon",
+      "label": "Tools",
+      "blurb": "Tools nutzen",
+      "value": 67.1,
+      "updated": "2026-08-26"
+    },
+    {
+      "key": "aa_intelligence_index",
+      "label": "Gesamt",
+      "blurb": "Gesamtleistung messen",
+      "value": 52,
+      "updated": "2026-08-17"
+    }
+  ],
+  "ranking": {
+    "shared_overall": null,
+    "size_class": "16to32",
+    "size_class_label": "16B – 32B",
+    "rank_in_size_class_coding": null,
+    "rank_in_shared_coding": null
+  },
+  "alternatives": [
+    {
+      "id": "qwen3-6-35b-a3b",
+      "reason": "Ähnliche Stärke, MoE, oft effizienter"
+    },
+    {
+      "id": "glm-5-3-flash",
+      "reason": "Günstiger/schneller Flash-Alternative"
+    },
+    {
+      "id": "ministral-3-14b",
+      "reason": "Kleiner, passt auf kleinere GPUs"
+    }
+  ],
+  "urls": {
+    "model_card": "https://huggingface.co/Qwen/Qwen3.8-27B",
+    "creator": "https://qwen.ai/",
+    "bench": "https://ai-hosting-bench.mittwald.app",
+    "bench_compare": "https://ai-hosting-bench.mittwald.app",
+    "docs": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/",
+    "openrouter": "https://openrouter.ai/qwen/qwen3.8-27b"
+  },
+  "cta": {
+    "primary": {
+      "label": "Modell nutzen",
+      "url": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/"
+    },
+    "secondary": {
+      "label": "Im Bench vergleichen",
+      "url": "https://ai-hosting-bench.mittwald.app"
+    }
+  },
+  "i18n": {
+    "de": {
+      "display_name": "Qwen3.8-27B",
+      "short_description": "Starkes Allround- und Coding-Modell mit Vision. Gut für Agenten, Tools und multimodale Aufgaben; läuft auf Dedicated-GPUs ab ca. 15 GB INT4.",
+      "pitch": "Starkes Coding mit Vision — passt ab Dedicated L.",
+      "not_ideal_for": [
+        "Reine OCR-/Dokumentenextraktion (besser Spezialmodelle)",
+        "Sehr kleine GPUs unter 15 GB"
+      ],
+      "quantization_note": "Benchmarkwerte stammen typischerweise aus Standard-Präzision (z. B. BF16/FP16). INT8/INT4 spart VRAM und kann die Qualität leicht senken."
+    },
+    "en": {
+      "display_name": "Qwen3.8-27B",
+      "short_description": "Strong general-purpose and coding model with vision. Good for agents, tools, and multimodal tasks; fits dedicated GPUs from ~15 GB INT4.",
+      "pitch": "Strong coding with vision — fits from dedicated L.",
+      "not_ideal_for": [
+        "Pure OCR/document extraction (prefer specialist models)",
+        "Very small GPUs under 15 GB"
+      ],
+      "quantization_note": "Benchmark scores typically come from standard precision (e.g. BF16/FP16). INT8/INT4 saves VRAM and may slightly reduce quality."
+    }
+  },
+  "performance": {
+    "tokens_per_second": null,
+    "time_to_first_token_ms": null,
+    "measured_on_tier": null,
+    "measured_quant": null
+  },
+  "languages": [
+    "de",
+    "en",
+    "multilingual"
+  ],
+  "changelog": [
+    {
+      "date": "2026-08-26",
+      "note": "Scores für Toolathlon, JobBench, NL2Repo, SWE-ML aktualisiert"
+    },
+    {
+      "date": "2026-08-05",
+      "note": "Modell aufgenommen"
+    }
+  ],
+  "scores": {
+    "aa_intelligence_index": 52,
+    "aa_coding_index": 68.1,
+    "swe_bench_verified": null,
+    "swe_bench_pro": 61.7,
+    "swe_atlas_rf": null,
+    "swe_atlas_tw": null,
+    "swe_atlas_qna": null,
+    "deepswe": 42.2,
+    "frontierswe": null,
+    "frontiercode": null,
+    "swe_rebench": null,
+    "livecodebench": 90.3,
+    "scicode": 44.7,
+    "terminal_bench_hard": null,
+    "terminal_bench_2_0": null,
+    "terminal_bench_2_1": 79.8,
+    "tau2_bench_telecom": null,
+    "cowork_bench": 70.7,
+    "agents_last_exam": 20.4,
+    "browsecomp": null,
+    "aime_2025": null,
+    "aime_2026": null,
+    "gpqa_diamond": 90.5,
+    "hle": 33.9,
+    "mmmu_pro": 76.3,
+    "osworld_verified": 84.3,
+    "bfcl_v3": null,
+    "arena_elo": null,
+    "coding_index": 61813,
+    "tooling_index": 69741,
+    "knowledge_index": 77329,
+    "swe_bench_multimodal": 38.6,
+    "tau3_bench_banking": 48,
+    "ifbench": 79.5,
+    "gdpval_aa": 1545,
+    "aa_omniscience": -10,
+    "aa_omniscience_hallucination": 30.3,
+    "aa_lcr": 77.3,
+    "critpt": 5.4,
+    "swe_bench_multilingual": 73.8,
+    "toolathlon": 67.1,
+    "job_bench": 33.4,
+    "nl2repo_bench": 42.3
+  },
+  "scores_updated": {
+    "aa_intelligence_index": "2026-08-17",
+    "aa_coding_index": "2026-08-25",
+    "swe_bench_verified": null,
+    "swe_bench_pro": "2026-08-15",
+    "swe_atlas_rf": null,
+    "swe_atlas_tw": null,
+    "swe_atlas_qna": null,
+    "deepswe": "2026-08-15",
+    "frontierswe": null,
+    "frontiercode": null,
+    "swe_rebench": null,
+    "livecodebench": "2026-08-15",
+    "scicode": "2026-08-17",
+    "terminal_bench_hard": null,
+    "terminal_bench_2_0": null,
+    "terminal_bench_2_1": "2026-08-17",
+    "tau2_bench_telecom": null,
+    "cowork_bench": "2026-08-17",
+    "agents_last_exam": "2026-08-17",
+    "browsecomp": null,
+    "aime_2025": null,
+    "aime_2026": null,
+    "gpqa_diamond": "2026-08-17",
+    "hle": "2026-08-17",
+    "mmmu_pro": "2026-08-17",
+    "osworld_verified": "2026-08-15",
+    "bfcl_v3": null,
+    "arena_elo": null,
+    "coding_index": "2026-08-24",
+    "tooling_index": "2026-08-24",
+    "knowledge_index": "2026-08-23",
+    "swe_bench_multimodal": "2026-08-22",
+    "tau3_bench_banking": "2026-08-17",
+    "ifbench": "2026-08-21",
+    "gdpval_aa": "2026-08-17",
+    "aa_omniscience": "2026-08-17",
+    "aa_omniscience_hallucination": "2026-08-17",
+    "aa_lcr": "2026-08-17",
+    "critpt": "2026-08-17",
+    "swe_bench_multilingual": "2026-08-26",
+    "toolathlon": "2026-08-26",
+    "job_bench": "2026-08-26",
+    "nl2repo_bench": "2026-08-26"
+  },
+  "scores_detail": [
+    {
+      "key": "aa_intelligence_index",
+      "value": 52,
+      "updated": "2026-08-17",
+      "label": "Index",
+      "name": "AA Intelligence Index",
+      "blurb": "Gesamtleistung messen",
+      "category": "Composite Index",
+      "description": "Artificial Analysis composite index combining multiple evaluations (including τ²-Bench Telecom, Terminal-Bench Hard, GPQA Diamond, and HLE) to synthesize overall model capability.",
+      "urls": [
+        "https://artificialanalysis.ai/methodology/intelligence-benchmarking"
+      ]
+    },
+    {
+      "key": "aa_coding_index",
+      "value": 68.1,
+      "updated": "2026-08-25",
+      "label": "Coding",
+      "name": "AA Coding Index",
+      "blurb": "Coding messen",
+      "category": "Composite Index",
+      "description": "Artificial Analysis composite index for coding performance combining multiple evaluations (including Terminal-Bench Hard, and SciCodeBench) to synthesize overall model capability.",
+      "urls": [
+        "https://artificialanalysis.ai/methodology/intelligence-benchmarking"
+      ]
+    },
+    {
+      "key": "swe_bench_verified",
+      "value": null,
+      "updated": null,
+      "label": "SWE-V",
+      "name": "SWE-bench Verified",
+      "blurb": "Echte Bugs",
+      "category": "Software Engineering",
+      "description": "Human-validated subset of SWE-bench for fixing real GitHub issues; solutions are judged by running unit tests.",
+      "urls": [
+        "https://www.swebench.com/SWE-bench/"
+      ]
+    },
+    {
+      "key": "swe_bench_pro",
+      "value": 61.7,
+      "updated": "2026-08-15",
+      "label": "SWE-Pro",
+      "name": "SWE-bench Pro",
+      "blurb": "Realistische Bugs",
+      "category": "Software Engineering",
+      "description": "Successor to SWE-bench Verified for realistic software engineering tasks; spans Python, JavaScript, TypeScript, and Go, and is designed to be more contamination-resistant and industry-relevant.",
+      "urls": [
+        "https://huggingface.co/datasets/ScaleAI/SWE-bench_Pro",
+        "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/"
+      ]
+    },
+    {
+      "key": "swe_atlas_rf",
+      "value": null,
+      "updated": null,
+      "label": "SWE-A RF",
+      "name": "SWE Atlas: Refactoring",
+      "blurb": "Code aufräumen",
+      "category": "Software Engineering",
+      "description": "Refactoring track of Scale AI's SWE Atlas suite: restructure production code to improve readability and maintainability while preserving behavior; 70 tasks graded by programmatic test validation plus rubric assessment. Metric is Task Resolve Rate (% of tasks passing all rubric items).",
+      "urls": [
+        "https://labs.scale.com/leaderboard/sweatlas-refactoring",
+        "https://labs.scale.com/papers/sweatlas",
+        "https://github.com/scaleapi/SWE-Atlas"
+      ]
+    },
+    {
+      "key": "swe_atlas_tw",
+      "value": null,
+      "updated": null,
+      "label": "SWE-A TW",
+      "name": "SWE Atlas: Test Writing",
+      "blurb": "Tests schreiben",
+      "category": "Software Engineering",
+      "description": "Test Writing track of Scale AI's SWE Atlas suite: write meaningful tests that exercise real functionality and raise coverage; 90 tasks graded by manifest check, mutation testing and rubric assessment. Metric is Task Resolve Rate (% of tasks passing all rubric items).",
+      "urls": [
+        "https://labs.scale.com/leaderboard/sweatlas-tw",
+        "https://labs.scale.com/papers/sweatlas",
+        "https://github.com/scaleapi/SWE-Atlas"
+      ]
+    },
+    {
+      "key": "swe_atlas_qna",
+      "value": null,
+      "updated": null,
+      "label": "SWE-A QnA",
+      "name": "SWE Atlas: Codebase Q&A",
+      "blurb": "Codefragen",
+      "category": "Software Engineering",
+      "description": "Codebase Q&A track of Scale AI's SWE Atlas suite: deep code-comprehension tasks such as tracing execution paths, multi-file reasoning and answering technical questions, with no code changes required; 124 tasks across 11 open-source repos in Go, Python, C and TypeScript. Metric is Task Resolve Rate (% of tasks passing all rubric items).",
+      "urls": [
+        "https://labs.scale.com/leaderboard/sweatlas-qna",
+        "https://labs.scale.com/papers/sweatlas",
+        "https://github.com/scaleapi/SWE-Atlas"
+      ]
+    },
+    {
+      "key": "deepswe",
+      "value": 42.2,
+      "updated": "2026-08-15",
+      "label": "DeepSWE",
+      "name": "DeepSWE",
+      "blurb": "Lange Coding-Jobs",
+      "category": "Software Engineering",
+      "description": "Benchmark measuring frontier coding agents on original, long-horizon and hand-written software engineering tasks on active open-source repositories; Python, JavaScript, TypeScript, Go and Rust.",
+      "urls": [
+        "https://deepswe.datacurve.ai/",
+        "https://github.com/datacurve-ai/deep-swe",
+        "https://huggingface.co/datasets/datacurve/deep-swe"
+      ]
+    },
+    {
+      "key": "frontierswe",
+      "value": null,
+      "updated": null,
+      "label": "F-SWE",
+      "name": "FrontierSWE",
+      "blurb": "Härteste Bugs",
+      "category": "Software Engineering",
+      "description": "Benchmarking software engineering skill at the edge of human ability; hand-crafted tasks, scored by Dominance (pairwise win-rate %) and average rank.",
+      "urls": [
+        "https://www.frontierswe.com"
+      ]
+    },
+    {
+      "key": "frontiercode",
+      "value": null,
+      "updated": null,
+      "label": "F-Code",
+      "name": "FrontierCode",
+      "blurb": "Härtester Code",
+      "category": "Software Engineering",
+      "description": "Cognition's benchmark of exceptionally hard, hand-crafted software engineering tasks at the frontier of model capability; contamination-resistant and unsaturated (top models score below 30%).",
+      "urls": [
+        "https://cognition.ai/blog/frontier-code",
+        "https://evals.report/benchmarks/frontiercode"
+      ]
+    },
+    {
+      "key": "swe_rebench",
+      "value": null,
+      "updated": null,
+      "label": "SWE-Re",
+      "name": "SWE-Rebench",
+      "blurb": "Frische Bugs",
+      "category": "Software Engineering",
+      "description": "A continuously updated, decontaminated benchmark for evaluating software-engineering LLMs on real-world coding tasks under a standardized evaluation setup.",
+      "urls": [
+        "https://swe-rebench.com"
+      ]
+    },
+    {
+      "key": "livecodebench",
+      "value": 90.3,
+      "updated": "2026-08-15",
+      "label": "LCBench",
+      "name": "LiveCodeBench",
+      "blurb": "Neue Code-Aufgaben",
+      "category": "Coding",
+      "description": "Contamination-resistant coding benchmark that continuously collects new problems; evaluates code generation, self-repair, code execution, and test output prediction.",
+      "urls": [
+        "https://livecodebench.github.io/"
+      ]
+    },
+    {
+      "key": "scicode",
+      "value": 44.7,
+      "updated": "2026-08-17",
+      "label": "SciCode",
+      "name": "SciCode",
+      "blurb": "Wissenschafts-Code",
+      "category": "Scientific Coding",
+      "description": "Scientific coding benchmark evaluating code generation and problem solving in scientific domains.",
+      "urls": [
+        "https://arxiv.org/abs/2407.13168"
+      ]
+    },
+    {
+      "key": "terminal_bench_hard",
+      "value": null,
+      "updated": null,
+      "label": "Term Hard",
+      "name": "Terminal-Bench Hard",
+      "blurb": "Schweres Terminal",
+      "category": "Agentic Coding & Terminal Use",
+      "description": "Hard subset of Terminal-Bench tasks; benchmark of real terminal tasks in sandboxed environments with test scripts.",
+      "urls": [
+        "https://www.tbench.ai/"
+      ]
+    },
+    {
+      "key": "terminal_bench_2_0",
+      "value": null,
+      "updated": null,
+      "label": "Term 2.0",
+      "name": "Terminal-Bench 2.0",
+      "blurb": "Terminal bedienen",
+      "category": "Agentic Coding & Terminal Use",
+      "description": "Terminal-Bench 2.0 is a collection of tasks and an evaluation harness to help agent makers quantify their agents' terminal mastery.",
+      "urls": [
+        "https://www.tbench.ai/leaderboard/terminal-bench/2.0"
+      ]
+    },
+    {
+      "key": "terminal_bench_2_1",
+      "value": 79.8,
+      "updated": "2026-08-17",
+      "label": "Term 2.1",
+      "name": "Terminal-Bench 2.1",
+      "blurb": "Terminal bedienen",
+      "category": "Agentic Coding & Terminal Use",
+      "description": "Terminal-Bench 2.1 is a collection of tasks and an evaluation harness to help agent makers quantify their agents' terminal mastery.",
+      "urls": [
+        "https://www.tbench.ai/leaderboard/terminal-bench/2.1"
+      ]
+    },
+    {
+      "key": "tau2_bench_telecom",
+      "value": null,
+      "updated": null,
+      "label": "τ² Tel",
+      "name": "τ²-Bench Telecom",
+      "blurb": "Tools im Chat",
+      "category": "Agentic Tool Use",
+      "description": "Dual-control conversational agent benchmark where both agent and user use tools in a shared environment; includes a compositional task generator; Telecom domain.",
+      "urls": [
+        "https://arxiv.org/abs/2506.07982"
+      ]
+    },
+    {
+      "key": "cowork_bench",
+      "value": 70.7,
+      "updated": "2026-08-17",
+      "label": "CoWork",
+      "name": "CoWorkBench",
+      "blurb": "Büro-Agent",
+      "category": "Long-horizon Agents",
+      "description": "Qwen in-house benchmark for long-horizon professional cowork tasks across computer science, finance, law, medicine, and other productivity domains. Only Qwen-published scores exist; not independently reproduced.",
+      "urls": [
+        "https://huggingface.co/Qwen/Qwen3.8-27B",
+        "https://llm-stats.com/benchmarks/coworkbench"
+      ]
+    },
+    {
+      "key": "agents_last_exam",
+      "value": 20.4,
+      "updated": "2026-08-17",
+      "label": "ALE P@1",
+      "name": "Agents' Last Exam",
+      "blurb": "Agenten-Jobs",
+      "category": "Long-horizon Agents",
+      "description": "Long-horizon professional agent tasks with verifiable outcomes. Metric is Pass@1 (full pass rate), not the partial-credit Score. Independent runs from the Snorkel ALE leaderboard (best harness) where available; otherwise vendor Pass@1.",
+      "urls": [
+        "https://snorkel.ai/leaderboard/agents-last-exam/",
+        "https://agents-last-exam.org/"
+      ]
+    },
+    {
+      "key": "browsecomp",
+      "value": null,
+      "updated": null,
+      "label": "BrowseC",
+      "name": "BrowseComp",
+      "blurb": "Im Web suchen",
+      "category": "Web Browsing",
+      "description": "Browsing benchmark with 1,266 challenging short-answer questions designed to be hard to find but easy to verify.",
+      "urls": [
+        "https://openai.com/index/browsecomp/"
+      ]
+    },
+    {
+      "key": "aime_2025",
+      "value": null,
+      "updated": null,
+      "label": "AIME25",
+      "name": "AIME 2025",
+      "blurb": "Mathe lösen",
+      "category": "Competition Math",
+      "description": "American Invitational Mathematics Examination; 15-question, 3-hour exam with integer answers from 0 to 999, using the 2025 exam set.",
+      "urls": [
+        "https://maa.org/maa-invitational-competitions/",
+        "https://huggingface.co/datasets/MathArena/aime_2025"
+      ]
+    },
+    {
+      "key": "aime_2026",
+      "value": null,
+      "updated": null,
+      "label": "AIME26",
+      "name": "AIME 2026",
+      "blurb": "Mathe lösen",
+      "category": "Competition Math",
+      "description": "American Invitational Mathematics Examination; 15-question, 3-hour exam with integer answers from 0 to 999, using the 2026 exam set.",
+      "urls": [
+        "https://maa.org/maa-invitational-competitions/",
+        "https://huggingface.co/datasets/MathArena/aime_2026"
+      ]
+    },
+    {
+      "key": "gpqa_diamond",
+      "value": 90.5,
+      "updated": "2026-08-17",
+      "label": "GPQA",
+      "name": "GPQA Diamond",
+      "blurb": "Schwere Wissenschaft",
+      "category": "Scientific Reasoning",
+      "description": "Graduate-level Google-proof multiple-choice science questions (biology, physics, chemistry) from GPQA; Diamond split used in evals.",
+      "urls": [
+        "https://arxiv.org/abs/2311.12022"
+      ]
+    },
+    {
+      "key": "hle",
+      "value": 33.9,
+      "updated": "2026-08-17",
+      "label": "HLE",
+      "name": "Humanity's Last Exam",
+      "blurb": "Expertenfragen",
+      "category": "Reasoning & Knowledge",
+      "description": "Humanity's Last Exam: multi-modal benchmark with 2,500 expert-level questions across many subjects, designed to resist internet retrieval.",
+      "urls": [
+        "https://lastexam.ai/"
+      ]
+    },
+    {
+      "key": "mmmu_pro",
+      "value": 76.3,
+      "updated": "2026-08-17",
+      "label": "MMMUPro",
+      "name": "MMMU Pro",
+      "blurb": "Bilder verstehen",
+      "category": "Vision-language Reasoning",
+      "description": "Vision-centric extension of MMMU that rigorously evaluates large multimodal models on challenging, college-level tasks requiring expert, cross‑disciplinary understanding and integrated visual–text reasoning.",
+      "urls": [
+        "https://mmmu-benchmark.github.io/",
+        "https://aclanthology.org/2025.acl-long.1317/",
+        "https://huggingface.co/datasets/MMMU/MMMU_Pro"
+      ]
+    },
+    {
+      "key": "osworld_verified",
+      "value": 84.3,
+      "updated": "2026-08-15",
+      "label": "OSWorld",
+      "name": "OSWorld-Verified",
+      "blurb": "PC steuern",
+      "category": "GUI Agent",
+      "description": "Benchmark measuring GUI agents' ability to complete real computer tasks in a sandboxed Ubuntu environment; Foundation E2E GUI subset with max 100 steps, scored by task success rate.",
+      "urls": [
+        "https://os-world.github.io",
+        "https://arxiv.org/abs/2404.07972"
+      ]
+    },
+    {
+      "key": "bfcl_v3",
+      "value": null,
+      "updated": null,
+      "label": "BFCL",
+      "name": "BFCL v3",
+      "blurb": "Funktionen aufrufen",
+      "category": "Function Calling",
+      "description": "Berkeley Function Calling Leaderboard v3: multi-turn, multi-step function/tool calling evaluation across structured output, reasoning, finance, agents, and hallucination avoidance.",
+      "urls": [
+        "https://gorilla.cs.berkeley.edu/leaderboard.html",
+        "https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html"
+      ]
+    },
+    {
+      "key": "arena_elo",
+      "value": null,
+      "updated": null,
+      "label": "Arena",
+      "name": "Arena Elo",
+      "blurb": "Chat-Präferenz",
+      "category": "Human Preference",
+      "description": "LMArena (formerly LMSYS Chatbot Arena) crowdsourced blind A/B evaluation. Overall Elo score from millions of human preference votes across math, coding, creative writing, and open-ended domains.",
+      "urls": [
+        "https://arena.ai/leaderboard/text",
+        "https://arena.ai/leaderboard"
+      ]
+    },
+    {
+      "key": "coding_index",
+      "value": 61813,
+      "updated": "2026-08-24",
+      "label": "coding_index",
+      "name": "coding_index",
+      "blurb": "Coding-Index",
+      "category": null,
+      "description": null,
+      "urls": null
+    },
+    {
+      "key": "tooling_index",
+      "value": 69741,
+      "updated": "2026-08-24",
+      "label": "tooling_index",
+      "name": "tooling_index",
+      "blurb": "Tool-Index",
+      "category": null,
+      "description": null,
+      "urls": null
+    },
+    {
+      "key": "knowledge_index",
+      "value": 77329,
+      "updated": "2026-08-23",
+      "label": "knowledge_index",
+      "name": "knowledge_index",
+      "blurb": "Wissens-Index",
+      "category": null,
+      "description": null,
+      "urls": null
+    },
+    {
+      "key": "swe_bench_multimodal",
+      "value": 38.6,
+      "updated": "2026-08-22",
+      "label": "swe_bench_multimodal",
+      "name": "swe_bench_multimodal",
+      "blurb": "Bugs mit Bildern",
+      "category": null,
+      "description": null,
+      "urls": null
+    },
+    {
+      "key": "tau3_bench_banking",
+      "value": 48,
+      "updated": "2026-08-17",
+      "label": "tau3_bench_banking",
+      "name": "tau3_bench_banking",
+      "blurb": "Banking-Tools",
+      "category": null,
+      "description": null,
+      "urls": null
+    },
+    {
+      "key": "ifbench",
+      "value": 79.5,
+      "updated": "2026-08-21",
+      "label": "IFBench",
+      "name": "IFBench",
+      "blurb": "Anweisungen folgen",
+      "category": "Instruction Following",
+      "description": "Instruction-following benchmark measuring adherence to complex, verifiable constraints in prompts.",
+      "urls": [
+        "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+      ]
+    },
+    {
+      "key": "gdpval_aa",
+      "value": 1545,
+      "updated": "2026-08-17",
+      "label": "gdpval_aa",
+      "name": "gdpval_aa",
+      "blurb": "Wirtschaftsaufgaben",
+      "category": null,
+      "description": null,
+      "urls": null
+    },
+    {
+      "key": "aa_omniscience",
+      "value": -10,
+      "updated": "2026-08-17",
+      "label": "aa_omniscience",
+      "name": "aa_omniscience",
+      "blurb": "Wissen & Halluzination",
+      "category": null,
+      "description": null,
+      "urls": null
+    },
+    {
+      "key": "aa_omniscience_hallucination",
+      "value": 30.3,
+      "updated": "2026-08-17",
+      "label": "aa_omniscience_hallucination",
+      "name": "aa_omniscience_hallucination",
+      "blurb": "Halluzinationsrate",
+      "category": null,
+      "description": null,
+      "urls": null
+    },
+    {
+      "key": "aa_lcr",
+      "value": 77.3,
+      "updated": "2026-08-17",
+      "label": "aa_lcr",
+      "name": "aa_lcr",
+      "blurb": "Lange Kontexte",
+      "category": null,
+      "description": null,
+      "urls": null
+    },
+    {
+      "key": "critpt",
+      "value": 5.4,
+      "updated": "2026-08-17",
+      "label": "critpt",
+      "name": "critpt",
+      "blurb": "Physik-Reasoning",
+      "category": null,
+      "description": null,
+      "urls": null
+    },
+    {
+      "key": "swe_bench_multilingual",
+      "value": 73.8,
+      "updated": "2026-08-26",
+      "label": "SWE-ML",
+      "name": "SWE-bench Multilingual",
+      "blurb": "Mehrsprachige Bugs",
+      "category": "Software Engineering",
+      "description": "Multilingual software-engineering tasks across languages; typically evaluated with agent harnesses such as mini-SWE-agent. Often vendor-reported.",
+      "urls": [
+        "https://www.swebench.com/",
+        "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+      ]
+    },
+    {
+      "key": "toolathlon",
+      "value": 67.1,
+      "updated": "2026-08-26",
+      "label": "Toolathlon",
+      "name": "Toolathlon Verified",
+      "blurb": "Tools nutzen",
+      "category": "Agentic Tool Use",
+      "description": "Real-world tool-use evaluation (Toolathlon Verified, Pass@1). Mix of vendor and independent leaderboard scores depending on model.",
+      "urls": [
+        "https://toolathlon.xyz/docs/leaderboard"
+      ]
+    },
+    {
+      "key": "job_bench",
+      "value": 33.4,
+      "updated": "2026-08-26",
+      "label": "JobBench",
+      "name": "JobBench",
+      "blurb": "Job-Aufgaben",
+      "category": "Long-horizon Agents",
+      "description": "Professional job-task benchmark for agentic workflows. Largely vendor-reported (Qwen model cards); not a widely reproduced third-party leaderboard.",
+      "urls": [
+        "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+      ]
+    },
+    {
+      "key": "nl2repo_bench",
+      "value": 42.3,
+      "updated": "2026-08-26",
+      "label": "NL2Repo",
+      "name": "NL2Repo-Bench",
+      "blurb": "Repos bauen",
+      "category": "Software Engineering",
+      "description": "Repo-level code generation from natural language: build or extend repositories under an agent harness (often Claude Code). Vendor-reported in Qwen model cards.",
+      "urls": [
+        "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+      ]
+    }
+  ],
+  "sources": [
+    "https://huggingface.co/Qwen/Qwen3.8-27B",
+    "https://artificialanalysis.ai/models/qwen3-8-27b",
+    "https://openrouter.ai/qwen/qwen3.8-27b"
+  ],
+  "meta": {
+    "schema_version": "1.0",
+    "data_source": "ai-hosting-bench",
+    "exported_at": "2026-09-08",
+    "locale_default": "de"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0",
+  "id": "qwen3-embedding-8b",
+  "slug": "qwen3-embedding-8b",
+  "display_name": "Qwen3-Embedding-8B",
+  "date_added": null,
+  "updated_at": "2025-06-05",
+  "url": "https://huggingface.co/Qwen/Qwen3-Embedding-8B",
+  "params": "8B",
+  "params_active": null,
+  "context": null,
+  "license": null,
+  "creator": {
+    "name": null,
+    "url": null,
+    "logo_url": null
+  },
+  "short_description": "Text-Embeddings für Retrieval und semantische Suche.",
+  "pitch": "Embedding-Modell für Suche, RAG und Ähnlichkeit.",
+  "tags": [
+    "embedding"
+  ],
+  "not_ideal_for": [
+    "Allgemeiner Chat/Coding (Spezialmodell)"
+  ],
+  "badges": [
+    "shared",
+    "lts",
+    "embedding"
+  ],
+  "capabilities": {
+    "vision": false,
+    "tools": false,
+    "reasoning": false,
+    "function_calling": false,
+    "multilingual": true
+  },
+  "vram": {
+    "fp16": 16,
+    "int8": 8,
+    "int4": 4
+  },
+  "vram_unit": "GB",
+  "recommended_quantization": null,
+  "hosting": {
+    "shared": true,
+    "shared_model_id": "Qwen3-Embedding-8B",
+    "api_model_id": "Qwen3-Embedding-8B",
+    "recommended_quant": null,
+    "fits_tiers": [],
+    "comfortable_tiers": [],
+    "docs_url": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/",
+    "playground_url": null,
+    "status": "lts",
+    "status_label": "LTS",
+    "token_factor": 0.5,
+    "token_factor_label": "0,5x"
+  },
+  "lifecycle": {
+    "status": "lts",
+    "label": "LTS"
+  },
+  "token_factor": 0.5,
+  "token_factor_label": "0,5x",
+  "pricing": null,
+  "mittwald_pricing": {
+    "shared_input_per_1m": null,
+    "shared_output_per_1m": null,
+    "currency": "EUR",
+    "dedicated_via_tier": false,
+    "token_factor": 0.5,
+    "token_factor_label": "0,5x"
+  },
+  "highlights": [
+    {
+      "key": "mteb_multilingual",
+      "value": 70.58,
+      "updated": "2025-06-05"
+    }
+  ],
+  "ranking": {
+    "shared_overall": null,
+    "size_class": null,
+    "size_class_label": null,
+    "rank_in_size_class_coding": null,
+    "rank_in_shared_coding": null
+  },
+  "alternatives": [],
+  "urls": {
+    "model_card": "https://huggingface.co/Qwen/Qwen3-Embedding-8B",
+    "creator": null,
+    "bench": "https://ai-hosting-bench.mittwald.app",
+    "docs": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/",
+    "portal": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/"
+  },
+  "cta": {
+    "primary": {
+      "label": "Modell nutzen",
+      "url": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/"
+    },
+    "secondary": {
+      "label": "Im Bench vergleichen",
+      "url": "https://ai-hosting-bench.mittwald.app"
+    }
+  },
+  "performance": {
+    "tokens_per_second": null,
+    "time_to_first_token_ms": null,
+    "measured_on_tier": null,
+    "measured_quant": null
+  },
+  "languages": [
+    "de",
+    "en",
+    "multilingual"
+  ],
+  "i18n": {
+    "de": {
+      "display_name": "Qwen3-Embedding-8B",
+      "short_description": "Text-Embeddings für Retrieval und semantische Suche.",
+      "pitch": "Embedding-Modell für Suche, RAG und Ähnlichkeit."
+    },
+    "en": {
+      "display_name": "Qwen3-Embedding-8B",
+      "short_description": "Text-Embeddings für Retrieval und semantische Suche.",
+      "pitch": "Embedding-Modell für Suche, RAG und Ähnlichkeit."
+    }
+  },
+  "scores": {
+    "mteb_multilingual": 70.58
+  },
+  "scores_updated": {
+    "mteb_multilingual": "2025-06-05"
+  },
+  "changelog": [
+    {
+      "date": "2026-09-08",
+      "note": "An Portal-Liste inkl. Status & Tokenfaktor angeglichen"
+    }
+  ],
+  "category": "embedding"
+}

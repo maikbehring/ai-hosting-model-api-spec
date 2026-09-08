@@ -1,0 +1,215 @@
+[
+  {
+    "id": "gpt-oss-120b",
+    "display_name": "gpt-oss-120b",
+    "api_model_id": "gpt-oss-120b",
+    "status": "lts",
+    "status_label": "LTS",
+    "token_factor": 1.0,
+    "token_factor_label": "1x",
+    "tags": [
+      "chat",
+      "reasoning"
+    ],
+    "badges": [
+      "shared",
+      "lts"
+    ],
+    "shared": true
+  },
+  {
+    "id": "ministral-3-14b",
+    "display_name": "Ministral-3-14B-Instruct-2512",
+    "api_model_id": "Ministral-3-14B-Instruct-2512",
+    "status": "lts",
+    "status_label": "LTS",
+    "token_factor": 1.0,
+    "token_factor_label": "1x",
+    "tags": [
+      "chat",
+      "coding"
+    ],
+    "badges": [
+      "shared",
+      "lts"
+    ],
+    "shared": true
+  },
+  {
+    "id": "whisper-large-v3-turbo",
+    "display_name": "whisper-large-v3-turbo",
+    "api_model_id": "whisper-large-v3-turbo",
+    "status": "lts",
+    "status_label": "LTS",
+    "token_factor": 0.5,
+    "token_factor_label": "0,5x",
+    "tags": [
+      "speech",
+      "asr"
+    ],
+    "badges": [
+      "shared",
+      "lts",
+      "speech"
+    ],
+    "shared": true
+  },
+  {
+    "id": "qwen3-tts-12hz-1-7b-customvoice",
+    "display_name": "Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "api_model_id": "Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "status": "testphase",
+    "status_label": "Testphase",
+    "token_factor": 1.0,
+    "token_factor_label": "1x",
+    "tags": [
+      "tts",
+      "speech"
+    ],
+    "badges": [
+      "shared",
+      "testphase",
+      "tts"
+    ],
+    "shared": true
+  },
+  {
+    "id": "qwen3-5-122b-a10b",
+    "display_name": "Qwen3.5-122B-A10B-FP8",
+    "api_model_id": "Qwen3.5-122B-A10B-FP8",
+    "status": "stable",
+    "status_label": "Stable",
+    "token_factor": 3.0,
+    "token_factor_label": "3x",
+    "tags": [
+      "coding",
+      "chat",
+      "agents"
+    ],
+    "badges": [
+      "shared",
+      "stable",
+      "vision"
+    ],
+    "shared": true
+  },
+  {
+    "id": "qwen3-6-35b-a3b",
+    "display_name": "Qwen3.6-35B-A3B-FP8",
+    "api_model_id": "Qwen3.6-35B-A3B-FP8",
+    "status": "stable",
+    "status_label": "Stable",
+    "token_factor": 1.0,
+    "token_factor_label": "1x",
+    "tags": [
+      "coding",
+      "chat",
+      "vision",
+      "agents",
+      "tools"
+    ],
+    "badges": [
+      "shared",
+      "stable",
+      "vision",
+      "recommended"
+    ],
+    "shared": true
+  },
+  {
+    "id": "qwen3-8-27b",
+    "display_name": "Qwen3.8-27B-NVFP4",
+    "api_model_id": "Qwen3.8-27B-NVFP4",
+    "status": "testphase",
+    "status_label": "Testphase",
+    "token_factor": 1.5,
+    "token_factor_label": "1,5x",
+    "tags": [
+      "coding",
+      "chat",
+      "vision",
+      "agents",
+      "tools"
+    ],
+    "badges": [
+      "shared",
+      "testphase",
+      "vision",
+      "recommended"
+    ],
+    "shared": true
+  },
+  {
+    "id": "qwen3-5-0-8b",
+    "display_name": "Qwen3.5-0.8B",
+    "api_model_id": "Qwen3.5-0.8B",
+    "status": "stable",
+    "status_label": "Stable",
+    "token_factor": 0.5,
+    "token_factor_label": "0,5x",
+    "tags": [
+      "chat"
+    ],
+    "badges": [
+      "shared",
+      "stable",
+      "vision"
+    ],
+    "shared": true
+  },
+  {
+    "id": "qwen3-vl-reranker-2b",
+    "display_name": "Qwen3-VL-Reranker-2B",
+    "api_model_id": "Qwen3-VL-Reranker-2B",
+    "status": "stable",
+    "status_label": "Stable",
+    "token_factor": 0.5,
+    "token_factor_label": "0,5x",
+    "tags": [
+      "reranker",
+      "vision"
+    ],
+    "badges": [
+      "shared",
+      "stable",
+      "reranker"
+    ],
+    "shared": true
+  },
+  {
+    "id": "glm-ocr",
+    "display_name": "GLM-OCR",
+    "api_model_id": "GLM-OCR",
+    "status": "stable",
+    "status_label": "Stable",
+    "token_factor": 0.5,
+    "token_factor_label": "0,5x",
+    "tags": [
+      "ocr",
+      "vision"
+    ],
+    "badges": [
+      "shared",
+      "stable"
+    ],
+    "shared": true
+  },
+  {
+    "id": "qwen3-embedding-8b",
+    "display_name": "Qwen3-Embedding-8B",
+    "api_model_id": "Qwen3-Embedding-8B",
+    "status": "lts",
+    "status_label": "LTS",
+    "token_factor": 0.5,
+    "token_factor_label": "0,5x",
+    "tags": [
+      "embedding"
+    ],
+    "badges": [
+      "shared",
+      "lts",
+      "embedding"
+    ],
+    "shared": true
+  }
+]

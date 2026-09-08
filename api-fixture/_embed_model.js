@@ -1,0 +1,224 @@
+const DEFAULT_MODEL = {
+  "schema_version": "1.0",
+  "id": "qwen3-8-27b",
+  "slug": "qwen3-8-27b",
+  "display_name": "Qwen3.8-27B-NVFP4",
+  "date_added": "2026-08-05",
+  "updated_at": "2026-08-26",
+  "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+  "params": "27B",
+  "params_active": null,
+  "context": "256k",
+  "license": null,
+  "creator": {
+    "name": "Alibaba",
+    "url": "https://qwen.ai/",
+    "logo_url": null
+  },
+  "short_description": "Starkes Allround- und Coding-Modell mit Vision. Shared als NVFP4.",
+  "pitch": "Starkes Coding mit Vision — aktuell in der Testphase.",
+  "tags": [
+    "coding",
+    "chat",
+    "vision",
+    "agents",
+    "tools"
+  ],
+  "not_ideal_for": [],
+  "badges": [
+    "shared",
+    "testphase",
+    "vision",
+    "recommended"
+  ],
+  "capabilities": {
+    "vision": true,
+    "tools": true,
+    "reasoning": true,
+    "function_calling": true,
+    "multilingual": true
+  },
+  "vram": {
+    "fp16": 56,
+    "int8": 28,
+    "int4": 15
+  },
+  "vram_unit": "GB",
+  "recommended_quantization": "int4",
+  "hosting": {
+    "shared": true,
+    "shared_model_id": "Qwen3.8-27B-NVFP4",
+    "api_model_id": "Qwen3.8-27B-NVFP4",
+    "recommended_quant": "int4",
+    "fits_tiers": [],
+    "comfortable_tiers": [],
+    "docs_url": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/",
+    "playground_url": null,
+    "status": "testphase",
+    "status_label": "Testphase",
+    "token_factor": 1.5,
+    "token_factor_label": "1,5x"
+  },
+  "lifecycle": {
+    "status": "testphase",
+    "label": "Testphase"
+  },
+  "token_factor": 1.5,
+  "token_factor_label": "1,5x",
+  "pricing": {
+    "input_per_1m": 0.4,
+    "output_per_1m": 3,
+    "blended_3_to_1": 1.05,
+    "currency": "USD",
+    "source": "openrouter:qwen/qwen3.8-27b"
+  },
+  "mittwald_pricing": {
+    "shared_input_per_1m": null,
+    "shared_output_per_1m": null,
+    "currency": "EUR",
+    "dedicated_via_tier": true,
+    "token_factor": 1.5,
+    "token_factor_label": "1,5x"
+  },
+  "highlights": [
+    {
+      "key": "aa_coding_index",
+      "value": 68.1,
+      "updated": "2026-08-25"
+    },
+    {
+      "key": "aa_intelligence_index",
+      "value": 52,
+      "updated": "2026-08-17"
+    },
+    {
+      "key": "deepswe",
+      "value": 42.2,
+      "updated": "2026-08-15"
+    },
+    {
+      "key": "mmmu_pro",
+      "value": 76.3,
+      "updated": "2026-08-17"
+    },
+    {
+      "key": "toolathlon",
+      "value": 67.1,
+      "updated": "2026-08-26"
+    }
+  ],
+  "ranking": {
+    "shared_overall": null,
+    "size_class": null,
+    "size_class_label": null,
+    "rank_in_size_class_coding": null,
+    "rank_in_shared_coding": null
+  },
+  "alternatives": [],
+  "urls": {
+    "model_card": "https://huggingface.co/Qwen/Qwen3.8-27B",
+    "creator": "https://qwen.ai/",
+    "bench": "https://ai-hosting-bench.mittwald.app",
+    "docs": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/",
+    "portal": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/"
+  },
+  "cta": {
+    "primary": {
+      "label": "Modell nutzen",
+      "url": "https://developer.mittwald.de/de/docs/v2/platform/aihosting/models/"
+    },
+    "secondary": {
+      "label": "Im Bench vergleichen",
+      "url": "https://ai-hosting-bench.mittwald.app"
+    }
+  },
+  "performance": {
+    "tokens_per_second": null,
+    "time_to_first_token_ms": null,
+    "measured_on_tier": null,
+    "measured_quant": null
+  },
+  "languages": [
+    "de",
+    "en",
+    "multilingual"
+  ],
+  "i18n": {
+    "de": {
+      "display_name": "Qwen3.8-27B-NVFP4",
+      "short_description": "Starkes Allround- und Coding-Modell mit Vision. Shared als NVFP4.",
+      "pitch": "Starkes Coding mit Vision — aktuell in der Testphase."
+    },
+    "en": {
+      "display_name": "Qwen3.8-27B-NVFP4",
+      "short_description": "Starkes Allround- und Coding-Modell mit Vision. Shared als NVFP4.",
+      "pitch": "Starkes Coding mit Vision — aktuell in der Testphase."
+    }
+  },
+  "scores": {
+    "aa_intelligence_index": 52,
+    "aa_coding_index": 68.1,
+    "swe_bench_pro": 61.7,
+    "deepswe": 42.2,
+    "livecodebench": 90.3,
+    "scicode": 44.7,
+    "terminal_bench_2_1": 79.8,
+    "cowork_bench": 70.7,
+    "agents_last_exam": 20.4,
+    "gpqa_diamond": 90.5,
+    "hle": 33.9,
+    "mmmu_pro": 76.3,
+    "osworld_verified": 84.3,
+    "coding_index": 61813,
+    "tooling_index": 69741,
+    "knowledge_index": 77329,
+    "swe_bench_multimodal": 38.6,
+    "tau3_bench_banking": 48,
+    "ifbench": 79.5,
+    "gdpval_aa": 1545,
+    "aa_omniscience": -10,
+    "aa_omniscience_hallucination": 30.3,
+    "aa_lcr": 77.3,
+    "critpt": 5.4,
+    "swe_bench_multilingual": 73.8,
+    "toolathlon": 67.1,
+    "job_bench": 33.4,
+    "nl2repo_bench": 42.3
+  },
+  "scores_updated": {
+    "aa_intelligence_index": "2026-08-17",
+    "aa_coding_index": "2026-08-25",
+    "swe_bench_pro": "2026-08-15",
+    "deepswe": "2026-08-15",
+    "livecodebench": "2026-08-15",
+    "scicode": "2026-08-17",
+    "terminal_bench_2_1": "2026-08-17",
+    "cowork_bench": "2026-08-17",
+    "agents_last_exam": "2026-08-17",
+    "gpqa_diamond": "2026-08-17",
+    "hle": "2026-08-17",
+    "mmmu_pro": "2026-08-17",
+    "osworld_verified": "2026-08-15",
+    "coding_index": "2026-08-24",
+    "tooling_index": "2026-08-24",
+    "knowledge_index": "2026-08-23",
+    "swe_bench_multimodal": "2026-08-22",
+    "tau3_bench_banking": "2026-08-17",
+    "ifbench": "2026-08-21",
+    "gdpval_aa": "2026-08-17",
+    "aa_omniscience": "2026-08-17",
+    "aa_omniscience_hallucination": "2026-08-17",
+    "aa_lcr": "2026-08-17",
+    "critpt": "2026-08-17",
+    "swe_bench_multilingual": "2026-08-26",
+    "toolathlon": "2026-08-26",
+    "job_bench": "2026-08-26",
+    "nl2repo_bench": "2026-08-26"
+  },
+  "changelog": [
+    {
+      "date": "2026-09-08",
+      "note": "An Portal-Liste inkl. Status & Tokenfaktor angeglichen"
+    }
+  ]
+};
